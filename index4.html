@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+  let arr2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+  function myFunction(str) {
+    for (let i = 0; i < arr1.length; i++) {
+      if (str === arr1[i]) {
+        return arr2[i];
+      } else if (i === arr1.length - 1) {
+        return 'Không tìm thấy ngôi sao';
+      }
+    }
+  }
+  let star = prompt('Nhập tên ngôi sao');
+  alert(myFunction(star));
+</script>
+</body>
+</html>
